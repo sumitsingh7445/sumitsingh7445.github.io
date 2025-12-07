@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact — Sumit Singh</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Contact Sumit Singh — email and form.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  $(cat header-snippet.html)
+  <main class="container">
+    <h2>Contact</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Get in touch</h3>
+        <p class="small">Email: <a href="mailto:sumitsingh7445@gmail.com">sumitsingh7445@gmail.com</a></p>
+        <p class="small">LinkedIn: <a href="#" target="_blank">Your LinkedIn</a></p>
+      </div>
+      <div class="card">
+        <h3>Message me</h3>
+        <!-- Replace the action URL with your Formspree endpoint or Netlify Forms -->
+        <form action="https://formspree.io/f/your-id" method="POST">
+          <label class="small">Name</label><br>
+          <input name="name" required style="width:100%;padding:8px;margin-top:6px"/><br><br>
+          <label class="small">Email</label><br>
+          <input type="email" name="_replyto" required style="width:100%;padding:8px;margin-top:6px"/><br><br>
+          <label class="small">Message</label><br>
+          <textarea name="message" rows="5" style="width:100%;padding:8px;margin-top:6px"></textarea><br><br>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">© $(date +%Y) Sumit Singh</footer>
+</body>
+</html>
