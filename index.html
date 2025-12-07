@@ -8,25 +8,59 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- header -->
-  $(cat header-snippet.html)
+  <!-- header (inline so GitHub Pages serves it correctly) -->
+  <header class="header">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <div class="logo">SS</div>
+        <div>
+          <div style="font-weight:700">Sumit Singh</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.85)">Achievements • Projects • Research</div>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <div class="more">
+          <a href="#">More ▾</a>
+          <div class="dropdown">
+            <a href="resume.html">Resume</a>
+            <a href="skills.html">Skills</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="blog.html">Blog</a>
+            <a href="services.html">Services</a>
+            <a href="awards.html">Awards</a>
+            <a href="research.html">Research</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
   <main class="container">
     <section class="hero">
       <div>
         <h1>Sumit Singh</h1>
         <p class="lead">Data Analyst • Research & Projects • Certificates & Reports</p>
         <p><a class="btn" href="resume.html">Download Resume</a></p>
+
         <div style="margin-top:18px" class="grid">
           <div class="card">
             <h3>Latest Certificate</h3>
             <p class="small">AI Tools Workshop — Issued: 2025</p>
             <p><a class="btn" href="certificates.html">View Certificates</a></p>
           </div>
+
           <div class="card">
             <h3>Research</h3>
             <p class="small">Sales Forecasting — Project report available</p>
             <p><a class="btn" href="research.html">See Research</a></p>
           </div>
+
           <div class="card">
             <h3>Projects</h3>
             <p class="small">Interactive dashboards, ML models, and case studies</p>
@@ -42,17 +76,19 @@
             <div class="small">Data Analyst • Researcher</div>
           </div>
         </div>
+
         <div style="margin-top:12px">
           <p class="small">Quick contacts:</p>
           <p class="small">Email: <a href="mailto:sumitsingh7445@gmail.com">sumitsingh7445@gmail.com</a></p>
-          <p class="small">GitHub: <a href="https://github.com/sumitsingh7445" target="_blank">github.com/sumitsingh7445</a></p>
+          <p class="small">GitHub: <a href="https://github.com/sumitsingh7445" target="_blank" rel="noopener">github.com/sumitsingh7445</a></p>
         </div>
       </aside>
     </section>
   </main>
 
   <footer class="footer">
-    © $(date +%Y) Sumit Singh — Professional Portfolio
+    © <script>document.write(new Date().getFullYear())</script> Sumit Singh — Professional Portfolio
   </footer>
 </body>
 </html>
+
